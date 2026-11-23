@@ -1,0 +1,13 @@
+{
+  "name": "homelab-projects",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Статическая страница со списком проектов GitHub в палитре Monokai Dimmed",
+  "scripts": {
+    "generate": "node generate.js",
+    "build": "node generate.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

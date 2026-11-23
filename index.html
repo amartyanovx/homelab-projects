@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GitHub projects of amartyanovx">
+  <title>Homelab Projects</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #1e1e1e;
+      --bg-card: #272727;
+      --border: #303030;
+      --fg: #c5c8c6;
+      --fg-muted: #9a9b99;
+      --link: #6089b4;
+      --mono: ui-monospace, "Cascadia Mono", "Segoe UI Mono", Consolas, monospace;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    ::selection { background: #676b7180; }
+
+    .page {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+
+    .page__header {
+      padding-bottom: 16px;
+      margin-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page__title {
+      margin: 0;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+
+    .page__meta {
+      margin: 6px 0 0;
+      color: var(--fg-muted);
+      font-family: var(--mono);
+      font-size: 12px;
+    }
+
+    .card {
+      margin-bottom: 24px;
+      padding: 20px 24px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .card__title {
+      margin: 0 0 14px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .card__field {
+      display: grid;
+      grid-template-columns: 112px minmax(0, 1fr);
+      gap: 12px;
+      align-items: baseline;
+    }
+
+    .card__field + .card__field { margin-top: 10px; }
+
+    /* Блок Result отделён от предыдущего поля дополнительными 8px. */
+    .card__field.card__field--result { margin-top: 18px; }
+
+    .card__label {
+      color: var(--fg-muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .card__link {
+      color: var(--link);
+      font-family: var(--mono);
+      font-size: 13px;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .card__link:hover { text-decoration: underline; }
+
+    .card__private { color: var(--fg); }
+
+    .card__purpose {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    .card__result {
+      justify-self: start;
+      font-size: 14px;
+    }
+
+    .empty { color: var(--fg-muted); }
+
+    .page__footer {
+      margin-top: 40px;
+      color: var(--fg-muted);
+      font-family: var(--mono);
+      font-size: 12px;
+    }
+
+    @media (max-width: 560px) {
+      .page { padding: 32px 16px 48px; }
+
+      .card { padding: 16px; }
+
+      .card__field {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="page__header">
+      <h1 class="page__title">Homelab Projects</h1>
+      <p class="page__meta">amartyanovx · repositories: 5 · updated 2026-11-23</p>
+    </header>
+
+    <section class="cards">
+      <article class="card">
+        <h2 class="card__title">ai-tribunal</h2>
+        <div class="card__field">
+          <span class="card__label">Repository</span>
+          <a class="card__link" href="https://github.com/amartyanovx/ai-tribunal">amartyanovx/ai-tribunal</a>
+        </div>
+        <div class="card__field">
+          <span class="card__label">Purpose</span>
+          <p class="card__purpose">Локальная мультиагентная система состязательной экспертизы идей на базе DeepSeek Harness (DSH Desktop).</p>
+        </div>
+        <div class="card__field card__field--result">
+          <span class="card__label">Result</span>
+          <span class="card__result">WIP</span>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card__title">nweather</h2>
+        <div class="card__field">
+          <span class="card__label">Repository</span>
+          <a class="card__link" href="https://github.com/amartyanovx/nweather">amartyanovx/nweather</a>
+        </div>
+        <div class="card__field">
+          <span class="card__label">Purpose</span>
+          <p class="card__purpose">This is a Next.js project bootstrapped with create-next-app.</p>
+        </div>
+        <div class="card__field card__field--result">
+          <span class="card__label">Result</span>
+          <span class="card__result">WIP</span>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card__title">development-harness</h2>
+        <div class="card__field">
+          <span class="card__label">Repository</span>
+          <span class="card__private">Private</span>
+        </div>
+        <div class="card__field">
+          <span class="card__label">Purpose</span>
+          <p class="card__purpose">Архитектура harness и устройство его слоёв. Принятые конвенции и требования к шаблонам. Руководства по развитию harness и проверкам.</p>
+        </div>
+        <div class="card__field card__field--result">
+          <span class="card__label">Result</span>
+          <span class="card__result">WIP</span>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card__title">knowledge-hub</h2>
+        <div class="card__field">
+          <span class="card__label">Repository</span>
+          <span class="card__private">Private</span>
+        </div>
+        <div class="card__field">
+          <span class="card__label">Purpose</span>
+          <p class="card__purpose">Knowledge Hub — система обработки и поиска документов. Реализован первый рабочий модуль: загрузка TXT/MD-документов, хранение в PostgreSQL, список и просмотр, полнотекстовый поиск средствами PostgreSQL (native FTS, без embeddings и внешних сервисов).</p>
+        </div>
+        <div class="card__field card__field--result">
+          <span class="card__label">Result</span>
+          <span class="card__result">WIP</span>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card__title">taskforge</h2>
+        <div class="card__field">
+          <span class="card__label">Repository</span>
+          <span class="card__private">Private</span>
+        </div>
+        <div class="card__field">
+          <span class="card__label">Purpose</span>
+          <p class="card__purpose">TaskForge — учебный проект системы управления задачами и проектами (Next.js + TypeScript, PostgreSQL, Docker Compose). Реализовано управление задачами: создание, список, подробности, редактирование названия и описания, статусы todo | in_progress | done, удаление с подтверждением. Данные хранятся в PostgreSQL и переживают перезапуск приложения.</p>
+        </div>
+        <div class="card__field card__field--result">
+          <span class="card__label">Result</span>
+          <span class="card__result">WIP</span>
+        </div>
+      </article>
+    </section>
+
+    <footer class="page__footer">Generated by generate.js</footer>
+  </main>
+</body>
+</html>
